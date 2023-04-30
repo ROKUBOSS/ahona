@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive</title>
+<style>
+*{box-sizing: border-box;
+    /* margin: 0%; */
+}
+
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+float: left;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+width: 15%;
+height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+display: block;
+background-color: inherit;
+color: black;
+padding: 22px 16px;
+width: 100%;
+border: none;
+outline: none;
+text-align: left;
+cursor: pointer;
+transition: 0.3s;
+font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+float: left;
+padding: 0px 12px;
+border: 1px solid #ccc;
+width: 85%;
+border-left: none;
+height: 300px;
+
+}
+/* Create four equal columns that floats next to each other */
+.column {
+float: left;
+width: 24%;
+padding: 10px;
+height: 600px; /* Should be removed. Only for demonstration */
+margin:0px 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+table,th,td{
+border: 2px solid darkblue;
+padding: 10px;
+text-align: center;
+border-collapse: collapse;
+width: 300px;
+}
+@media only screen and (max-width: 620px) {
+/* For mobile phones: */
+.tab, .tabcontent {
+width: 100%;
+}
+.tabcontent .row .column{
+    width: 100%;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="main">
+<div class="tab">
+<center><h2>ষষ্ট জামাত</h2></center>
+<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+<button class="tablinks" onclick="openCity(event, 'Paris')">মারযানা আক্তার</button>
+<button class="tablinks" onclick="openCity(event, 'Tokyo')">মারিফা ইসলাম</button>
+</div>
+
+<div id="London" class="tabcontent">
+<h3>London</h3>
+<p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+<div class="row">
+<div class="column" style="background-color:#02FEBF;">
+<h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">মাদ্রাসা তথ্য</h2>
+<p>
+<p>কিতাব বিভাগ</p>
+<p>পুরাতন</p>
+<p>অনাবাসিক</p>
+<p>জামাত (৬)</p>
+<p>রোল-১</p>
+<p>রেজিস্ট্রেশন নাম্বার- ১ </p>
+<p>উপস্থিতি - ২২ দিন </p>
+<p>অনুপস্থিতি -  ৮ দিন </p>
+</p>
+</div>
+<div class="column" style="background-color:#00FFFF;">
+<h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ব্যক্তিগত তথ্য</h2>
+<p>বয়স "১৩"</p>
+<p>রক্তের গ্রুপ "বি পজিটিভ"</p>
+</div>
+<div class="column" style="background-color:#FFE4E1;">
+<h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">পারিবারিক তথ্য</h2>
+<p>
+<p>পিতার নাম - মোহাম্মাদ উজ্জ্বল</p>
+<p>ফোন নম্বর-০১৭৮৮৫২৪৯৭৮</p>
+<p>নির্ধারিত অভিভাবক- আপন মামা</p>
+<p>নির্ধারিত অভিভাবিকা- মা / আপন খালা </p>
+<p>ঠিকানা - <br> <br><br>
+গ্রাম-পাঠান পাড়া <br> <br>
+ইউনিয়ন- কনকা পইত <br> <br>
+থানা-ছদ্দগ্রাম <br><br>
+জেলা-কুমিল্লা <br><br> 
+</p>
+</div>
+<div class="column" style="background-color:#FDF2C0;">
+<h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ফলাফল বিবরণী</h2>
+<p>
+<center>
+<table>
+<tr>
+<th>বিষয়</th>
+<th>প্রাপ্ত নাম্বার</th>
+</tr>
+<tr>
+<td>কুরআন মাজিদ </td>
+<td>৯৫</td>
+</tr>
+<tr>
+<td>মিযান ও মুনশাইব </td>
+<td>৯০</td>
+</tr>
+<tr>
+<td>তারিফুল ইসলাম </td>
+<td>৮৫</td>
+</tr>
+<tr>
+<td>বাংলা </td>
+<td> ৭৮</td>
+</tr>
+<tr>
+<td>গণিত </td>
+<td>৭৯</td>
+</tr>
+<tr>
+<td>ইংরেজি </td>
+<td>৮৫</td>
+</tr>
+<tr>
+<td>সমাজ ও ভুগল </td>
+<td>৮৮</td>
+</tr>
+<tr>
+<td>আইসিটি </td>
+<td>৯৮</td>
+</tr>
+</table> <br><br><br>
+<input type="radio" name="" id="">মেধা যাচাইয়ে অবস্থানঃ অপূর্ব <br><br>
+<input type="radio" name="" id="">শিক্ষা পরিচালকের মন্তব্য-উত্তম <br><br>
+</center>
+
+</p>
+</div>
+</div> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+<div class="row">
+<div class="column" style="background-color:#02FEBF;">
+<h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">মাদ্রাসা তথ্য</h2>
+<p>
+<p>কিতাব বিভাগ</p>
+<p>পুরাতন</p>
+<p>অনাবাসিক</p>
+<p>জামাত (৬)</p>
+<p>রোল-১</p>
+<p>রেজিস্ট্রেশন নাম্বার- ১ </p>
+<p>উপস্থিতি - ২২ দিন </p>
+<p>অনুপস্থিতি -  ৮ দিন </p>
+</p>
+</div>
+<div class="column" style="background-color:#00FFFF;">
+<h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ব্যক্তিগত তথ্য</h2>
+<p>বয়স "১৬"</p>
+<p>রক্তের গ্রুপ "বি পজিটিভ"</p>
+</div>
+<div class="column" style="background-color:#FFE4E1;">
+<h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">পারিবারিক তথ্য</h2>
+<p>
+<p>পিতার নাম - মোহাম্মাদ উজ্জ্বল</p>
+<p>ফোন নম্বর-০১৭৮৮৫২৪৯৭৮</p>
+<p>নির্ধারিত অভিভাবক- আপন মামা</p>
+<p>নির্ধারিত অভিভাবিকা- মা / আপন খালা </p>
+<p>ঠিকানা - <br> <br><br>
+গ্রাম-পাঠান পাড়া <br> <br>
+ইউনিয়ন- কনকা পইত <br> <br>
+থানা-ছদ্দগ্রাম <br><br>
+জেলা-কুমিল্লা <br><br> 
+</p>
+</div>
+<div class="column" style="background-color:#FDF2C0;">
+<h2 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ফলাফল বিবরণী</h2>
+<p>
+<center>
+<table>
+<tr>
+<th>বিষয়</th>
+<th>প্রাপ্ত নাম্বার</th>
+</tr>
+<tr>
+<td>কুরআন মাজিদ </td>
+<td>৯৫</td>
+</tr>
+<tr>
+<td>মিযান ও মুনশাইব </td>
+<td>৯০</td>
+</tr>
+<tr>
+<td>তারিফুল ইসলাম </td>
+<td>৮৫</td>
+</tr>
+<tr>
+<td>বাংলা </td>
+<td> ৭৮</td>
+</tr>
+<tr>
+<td>গণিত </td>
+<td>৭৯</td>
+</tr>
+<tr>
+<td>ইংরেজি </td>
+<td>৮৫</td>
+</tr>
+<tr>
+<td>সমাজ ও ভুগল </td>
+<td>৮৮</td>
+</tr>
+<tr>
+<td>আইসিটি </td>
+<td>৯৮</td>
+</tr>
+</table> <br><br><br>
+<input type="radio" name="" id="">মেধা যাচাইয়ে অবস্থানঃ অপূর্ব <br><br>
+<input type="radio" name="" id="">শিক্ষা পরিচালকের মন্তব্য-উত্তম <br><br>
+</center>
+
+</p>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html> 
