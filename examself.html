@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <style>
+        *{
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: whitesmoke;
+        }
+        .container{
+            width: 100%;
+            overflow: hidden;
+        }
+        .container .header{
+            background-color:#ab72dd;
+            color: white;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container .header span{
+            font-weight: 700;
+            letter-spacing: 3px;
+           
+           
+            
+        }
+        .container .main{
+           margin-left: 200px;
+           width: 100%;
+           height: 740px;
+           background-color: #f8f8f8;
+           
+            
+        }
+        .container .main .left{
+           float: left;
+           width: 20%;
+           height: 700px;
+           border: 1px solid;
+           margin-left: 30px;
+           
+            
+        }
+        .container .main .right{
+           float: left;
+           width: 60%;
+           padding: 0px 30px;
+           height: 700px;
+           border: 1px solid whitesmoke;
+           
+            
+        }
+        .container .main .left li{
+          
+          list-style: none;
+          border-bottom: 1px solid;
+          height: 40px;
+          padding: 10px;
+            
+        }
+        .container .main .nav
+        {
+            width: 100%;
+            margin-top: 3px;
+        
+        }
+        .container .main .nav li
+        {
+        display: inline-flex;
+        }
+        .container .main .nav li a
+        {
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+        margin: 0px auto;
+        color: black;
+
+        }
+        .list{
+            background-color: #ab72dd;
+            color: white;
+            padding: 10px;
+        }
+        .container .footer{
+            background-color:#ab72dd;
+            text-align: center;
+            width: 100%;
+        }
+        .container .footer p{
+           color: white;
+           padding-top: 20px;
+           padding-bottom: 5px;
+        
+        }
+        /* .container .header{
+           
+        } */
+
+        #about{
+            background-color: pink;
+            border: 1px solid pink;
+        }
+        @media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .container, .container .header, .container .footer {
+    width: 100%;
+  }
+  .container .main{
+    width: 100%;
+    margin: 0px;
+  }
+  .container .main .nav{
+    width: 100%;
+  }
+  .container .main .left{
+    width: 100%;
+    margin: 0px;
+
+  }
+  .container .main .right{
+    width: 100%;
+    margin: 0px;
+    background-color: #f8f8f8;
+
+  }
+  
+}
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span style="font-size: x-large;">IDB-BISEW</span> <br>
+            <small>IT SCHOLARSHIP PROJECT</small>
+
+        </div>
+        
+        <div class="main">
+            <div class="nav">
+                <nav>
+                    <li><a href="#" target="_blank" style="background-color: #ab72dd; font-weight: 500; color: white;">HOME</a></li>
+                    <li><a href="#" target="_blank">ABOUT US</a></li>
+                    <li><a href="#" target="_blank">Contact Us</a></li>
+                </nav>
+            </div><br>
+            <div class="left">
+                
+                <li style="background-color: #ab72dd;"></li>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>COURSES</li>
+                <li>REGISTRATION</li>
+                <li>REQUIREMENTS</li>
+                <li>CONTACT US</li>
+                <li></li>
+              <div>
+                <li class="list">SEARCH</li>
+                <li><input type="text" name="" id=""> <input type="button" value="search"></li>
+              </div>
+
+
+            </div>
+            <div class="right">
+                <h4 id="about">ABOUT US</h4>
+                <p style="text-align: justify;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum dolorum nemo id rerum? Voluptates, beatae. Aliquid amet, dolorum ut iusto rem minus dolorem incidunt beatae sunt dolor iste soluta.
+                    Saepe beatae quaerat atque iste deleniti molestias commodi sunt! Quidem sapiente at repellat beatae nostrum unde, fugiat mollitia tenetur, ullam odit quas nemo maxime molestias reiciendis. Cumque nisi repudiandae illum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ipsa excepturi explicabo sit, omnis ipsum accusantium at nisi aspernatur numquam facilis doloribus maxime, odio fugiat culpa eaque error sunt quo!
+                    Neque, sequi mollitia voluptatum minima obcaecati aliquid rerum impedit quod cupiditate. Mollitia labore necessitatibus, odio eius aliquam esse ea voluptatibus similique, nesciunt asperiores vitae ipsam voluptatem. Minus reiciendis atque laudantium! <br><br>
+                    Animi doloribus facere omnis? At harum reiciendis blanditiis nesciunt laborum doloremque. Nulla quae ea dignissimos, in minima non nihil earum architecto, temporibus quas dolores, ut laborum. Ab perferendis eos sunt!
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy;copyright by idb bisew students</p>
+        </div>
+    </div>
+</body>
+</html>
