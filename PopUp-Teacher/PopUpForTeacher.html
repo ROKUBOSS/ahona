@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp-Teacher</title>
+    <style>
+        .word {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 10px; 
+            border: 1px solid #888;
+            width: 80%;
+            max-width: fit-content;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        @media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right, img, video {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <p style="text-align: justify;">
+        What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown <span class="word" onclick="showModal('image', 'car.jpg')">printer</span>  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a <span class="word" onclick="showModal('image', 'reader.jpg')">reader</span> reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+    </p>
+
+       
+    <!-- <p>
+        <span class="word" onclick="showModal('text', 'Hello Dear / How Are You?  ')">Text</span>
+        <span class="word" onclick="showModal('image', 'img.jpg')">Image</span>
+        <span class="word" onclick="showModal('video', 'vid.mp4')">Video</span>
+        <span class="word" onclick="showModal('audio', 'aud.mp3')">Audio</span>
+    </p> -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script>
+        function showModal(type, content) {
+            var modalBody = document.getElementById('modal-body');
+            modalBody.innerHTML = '';
+
+            if (type === 'text') 
+            {
+                modalBody.innerHTML = '<p>' + content + '</p>';
+            } 
+            else if (type === 'image') 
+            {
+                modalBody.innerHTML = '<img src="' + content + '" alt="উদাহরণ ছবি">';
+            }
+            else if (type === 'audio') 
+             {
+                modalBody.innerHTML = '<audio controls><source src="' + content + '" type="audio/mp3"></audio>';
+             }
+             else if (type === 'video') 
+             {
+                modalBody.innerHTML = '<video width="320" height="240" controls><source src="' + content + '" type="video/mp4">আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।</video>';
+            }
+
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        // Close the modal if the user clicks outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
