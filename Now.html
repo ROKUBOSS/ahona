@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    *{
+
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+.collapsible {
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid orange;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  
+}
+
+.active, .collapsible:hover {
+  background-color: red;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<button type="button" class="collapsible">Education</button>
+<div class="content">
+  <li>SSC (4.63)</li>
+  <li>HSC (4.20)</li>
+  <li>Honours (3.32)</li>
+  <li>Masters (Continue...)</li><br><br><br>
+  <li>BCC Diploma (3.23)</li>
+  <li>IsDB BISEW (Continue...)</li>
+  <li>IELTS (No)</li>
+</div>
+<button type="button" class="collapsible">Personal Documents</button>
+<div class="content">
+  <li>NID (Not Smart)</li>
+  <li>Passport</li>
+  <li>Birth Certificate</li>
+  <li>TIN</li>
+  <li>Bank Account (Sonali / EBL / DBBL)</li>
+  <li>Debit / Credit Card (EBL / Sonali / DBBL)</li>
+  <li>Driving License (No)</li>
+</div>
+<button type="button" class="collapsible">Career & Income Source</button>
+<div class="content">
+    <h3>Per Month</h3>
+ <li>Deposit (16,000)</li>
+ <li>ICT Class (25,000)</li>
+ <li>Web Class (?)</li>
+ <li>WebSite Design & Development (30,000)</li>
+ <li>GoliBazar (?)</li>
+ <li>Alok Shikha (?)</li>
+ <li>LensCafe Studio (?)</li>
+ <li>Others Business (?)</li>
+ <li></li>
+</div>
+<button type="button" class="collapsible">Treatment</button>
+<div class="content">
+  <li>Tooth</li>
+  <li>Allergy</li>
+  <li>?</li>
+</div>
+<button type="button" class="collapsible">Affair / Married</button>
+<div class="content">
+<li>?</li>
+
+</div>
+<button type="button" class="collapsible">Alok Shikha & LensCafe Studio</button>
+<div class="content">
+    <h3>Virtual Assets</h3>
+  <li>Domain (2)</li>
+  <li>WebSite (2)</li>
+  <li>Google (2 Account)</li>
+  <li>Meta (2 Pages)</li>
+  <li>Phone No - 01753818619</li>
+  <h3>Management</h3>
+  <li>Stuffs</li>
+  <li>Devices</li>
+  <li>Documents (Assets)</li>
+  <li>Virtual Assets</li>
+  <li>Legal Papers</li>
+  <li>Main Office & Branches</li>
+  <li>Experiment (Adds / Products / Services)</li>
+</div>
+<button type="button" class="collapsible">Exercise</button>
+<div class="content">
+  <li>Free Hand</li>
+  <li>Gym</li>
+  <li>Sex</li>
+  <li>Martial Art</li>
+  <li>Yoga</li>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
